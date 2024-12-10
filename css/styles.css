@@ -179,7 +179,8 @@ img{
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 320px;
+    height: 432px;
     text-align: center;
     padding: 188px 0;
 
@@ -240,12 +241,14 @@ img{
 
 
 }
+
+/* --------------------------------------BENEFITS--------------------------------------------------------- */
 .benefits-section .container{
    /* max-width: 288px; */
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   background-color: red;
+   /* background-color: red; */
 }
 .container .hero-section-button{
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -256,14 +259,14 @@ img{
 }
 
 .benefits-section{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .benefits-section-ul {
     margin: 0;
     padding: 0;
     /* display: flex; */
 
-    gap: 72px;
+    /* gap: 72px; */
 
 }
 .benefits-icon-container{
@@ -328,12 +331,7 @@ img{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
-    background-color: yellow;
-
-;
-
-
+    flex-wrap: wrap;
 }
 .our-team-section{
     padding: 120px 0;
@@ -457,7 +455,6 @@ img{
 /* ----------------------------------PORTFOLIO---------------------------------- */
 
 .our-portfolio-section .container{
-    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -556,25 +553,20 @@ img{
 
 .footer-section{
     margin: 0 auto;
-    padding: 100px 0;
     background: #2e2f42;
-    /* width: 1440px; */
+    max-width: 320px;
+    padding: 96px 0px;
+    text-align: center;
+
+
 }
 
-.footer-section .container{
-    display: flex;
-    align-items: baseline;
-    
-    
-}
-.footer-section .container .main-logo-footer{
+
+.footer-section .container .main-logo-footer{  
     display: inline-block;
     margin-bottom: 16px;
-
     max-width: 115px;
     max-height: 24px;
-
-    
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -582,15 +574,23 @@ img{
     text-transform: uppercase;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
+    
 }
 
-
-
-.footer-content{
-    margin-right: 120px;
+.footer-section-p{
+    text-align: left;
 }
 
+.footer-social-icons{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 208px;
+    padding: 72px 0px;
+}
 .footer-social-icons-text{
+    margin: 0 auto;
+    text-align: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -606,6 +606,10 @@ img{
 }
 
 .footer-social-icons-item{
+    
+    margin: 0 auto;
+
+
     width: 40px;
     height: 40px;
 
@@ -660,11 +664,10 @@ img{
     color: #f4f4fd;
 }
 
-.formcontainer{
-    margin-left: 80px;
+.formcontainer button{
+    margin: 0 auto;
 }
 .formcontainertext{
-    /* margin-left: 80px; */
     margin-bottom: 16px;
     font-weight: 500;
     font-style: 16px;
@@ -675,9 +678,10 @@ img{
 
 
 .form{
+    gap: 16px;
     display: flex;
-    gap:24px;
-
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .formlabel{
@@ -693,7 +697,6 @@ img{
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
@@ -704,7 +707,7 @@ img{
 }
 
 .formbutton{
-    min-width: 165px;
+    max-width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -723,7 +726,7 @@ img{
 
 
 .formbuttonlogo{
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 
 
@@ -1006,28 +1009,240 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 
 /* ---------------------------------------------------MEDIA------------------------------------------------------ */
-@media (max-width: 1440px) {
+
+
+
+/* -----------------------------------BENEFITS-------------------------------------------- */
+/* -----------------------------------BENEFITS-------------------------------------------- */
+/* -----------------------------------BENEFITS-------------------------------------------- */
+@media (max-width: 1439px) {
     .benefits-icon-container {
-        visibility: hidden; /* Скрывает изображения, но сохраняет занимаемое место */
+        visibility: hidden;
     }
+
+    @media screen and (min-width:768px){
+        .benefits-icon-container {
+            display: none;
+        }
+        .benefits-section .container{
+            max-width: 768px;           
+        }
+
+        .benefits-section-ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            text-align: left; 
+        }
+        .benefits-section-strategy-li{
+            flex: calc(50% - 24px);
+            text-align: left;
+        }
+    }
+
+    
+
+    
 }
 
-
-@media screen and (min-width:768px){
+@media screen and (min-width: 1440px){
     .benefits-section .container{
-        max-width: 736px;
+        max-width: 1440px;
+    }
+
+
+    .benefits-section{
+        padding: 120px 0;
+    }
+    .benefits-section-ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 24px;
+    }
+    .benefits-icon-container{
+        margin-bottom: 8px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        background: #f4f4fd;
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .benefits-section-strategy-li{
-        width: 356px
+        width: calc((100% - 72px) / 4);
     }
 }
-/* @media screen and (max-width: 768px){
+
+/* -----------------------------------BENEFITS-------------------------------------------- */
+/* -----------------------------------BENEFITS-------------------------------------------- */
+/* -----------------------------------BENEFITS-------------------------------------------- */
+
+
+
+/* ------------------------------------------OUR-TEAM---------------- */
+/* ------------------------------------------OUR-TEAM---------------- */
+/* ------------------------------------------OUR-TEAM---------------- */
+
+@media  screen and (min-width:768px){
     .our-team-section .container{
         max-width: 768px;
     }
-} */
+}
+
+@media screen and (min-width: 1440px){
+    .our-team-section .container{
+        max-width: 1440px;
+    }
+}
+
+/* ------------------------------------------OUR-TEAM---------------- */
+/* ------------------------------------------OUR-TEAM---------------- */
+/* ------------------------------------------OUR-TEAM---------------- */
 
 
+/* -----------------------------------------------------OUR-----PORTFOLIO----------------------------- */
+/* -----------------------------------------------------OUR-----PORTFOLIO----------------------------- */
+/* -----------------------------------------------------OUR-----PORTFOLIO----------------------------- */
+
+
+@media screen and (min-width:768px){
+
+    .our-portfolio-section .container{
+        max-width: 736px;
+    }
+
+    .our-portfolio-section-list-item{
+        width: calc((100% - 48px) / 2);
+    }
+
+    .our-portfolio-app-img img{
+        width: 356px;
+    }
+
+}
+
+@media screen and (min-width:1440px){
+
+    .our-portfolio-section .container{
+        max-width: 1128px;
+        background-color: white;
+    }
+
+
+
+    .our-portfolio-section{
+        padding: 120px 0 120px 0;
+    }
+    .our-portfolio-section-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;    
+    }
+    .our-portfolio-section-list-item{
+
+        
+        width: calc((100% - 48px) / 3);
+        
+
+
+        /* width: 360px; */
+        /* height: 420px; */
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    
+    
+    }
+    .our-portfolio-app-img{
+        
+    }
+    .our-portfolio-app-img img{
+        width: 360px;
+    }
+}
+
+/* -----------------------------------------------------OUR-----PORTFOLIO----------------------------- */
+/* -----------------------------------------------------OUR-----PORTFOLIO----------------------------- */
+/* -----------------------------------------------------OUR-----PORTFOLIO----------------------------- */
+    
+
+
+/* -------------------------------FOOTER--------------------------- */
+/* -------------------------------FOOTER--------------------------- */
+/* -------------------------------FOOTER--------------------------- */
+
+
+@media screen and (min-width:768px){
+    .footer-section{
+        max-width: 768px;
+        text-align: left;
+    }
+    .footer-section .container{
+        max-width: 496px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 0 auto;
+        padding: 0px;
+
+        text-align: left;
+    }
+    .form{
+        display: flex;
+        flex-direction:row;
+        gap: 24px;
+    }
+    .footer-social-icons{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .footer-social-icons p{
+        text-align: left;
+    }
+
+
+    .formbutton{
+        min-width: 165px;
+    }
+}
+
+
+@media screen and (min-width:1440px){
+
+    .footer-section{
+        max-width: 1440px;
+
+        margin: 0 auto;
+        padding: 100px 0;
+        background: #2e2f42;
+    }
+
+    .footer-section .container{
+        margin: 0 auto;
+        max-width: 1128px;
+        padding-top: 0px;
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .footer-content{
+        margin-right: 120px;
+    }
+
+    
+    .formcontainer{
+        padding: 0px;
+    }
+
+    
+}
 
 
 
