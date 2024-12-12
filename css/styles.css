@@ -25,7 +25,7 @@ img{
 /* header-styles */
 .page-header{
     border-bottom: 1px solid  #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
     
 }
 .container{
@@ -34,9 +34,13 @@ img{
     padding: 0 16px 0 16px;
 
 }
-
+.page-header{
+    max-width: 320px;
+    margin: 0 auto;
+}
 .page-header .container{
-    height: 72px;
+    max-width: 320px;
+    height: 56px;
     display: flex;
     border-bottom: 1px solid #e7e9fc
 }
@@ -70,6 +74,7 @@ img{
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
+    display: none;
 }
 .menu-item-studio{
     padding: 24px 0;
@@ -122,10 +127,18 @@ img{
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-
+.menu-open-button{
+    display: block;
+    padding: 0px;
+    margin-left: 84px;
+    background-color: #FFFFFF;
+    border: #e7e9fc;
+}
 
 .contacts{
+    
 
+    display: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -136,8 +149,9 @@ img{
 }
 
 .contact-list{
+    display: none;
     padding: 0;
-    display: flex;
+    /* display: flex; */
     gap: 40px;
 }
 
@@ -154,7 +168,7 @@ img{
 .contact-item-a{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 26px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -171,10 +185,82 @@ img{
 
 /* end header */
 
+
+
+/* -------------------------------------------------------MOBILE-MENU---------------------------------------- */
+/* -------------------------------------------------------MOBILE-MENU---------------------------------------- */
+/* -------------------------------------------------------MOBILE-MENU---------------------------------------- */
+
+.mob-menu-div{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    padding: 24px 24px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-close-button{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 24px;
+    
+}
+/* .mob-menu-ul-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+.mob-menu-list a{
+    /* margin-top: 40px; */
+
+}
+
+.mob-menu-item{
+    margin-left: 16px;
+    margin-bottom: 40px;
+}
+
+
+.mob-menu-item-studio-active{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+
+    margin-top: 40px;
+}
+.mob-menu-item-studio{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+
+.mob-menu-div .our-team-social-icon-list{
+    margin-bottom: 50px;
+}
+
+.menu-open-button-logo{
+    color: black;
+}
+/* -------------------------------------------------------MOBILE-MENU---------------------------------------- */
+/* -------------------------------------------------------MOBILE-MENU---------------------------------------- */
+/* -------------------------------------------------------MOBILE-MENU---------------------------------------- */
+
 /* main */
 
 .hero-section{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-sectin-bg-image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-section-mobile-2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -182,7 +268,7 @@ img{
     max-width: 320px;
     height: 432px;
     text-align: center;
-    padding: 188px 0;
+    padding: 72px 0;
 
 
 
@@ -201,11 +287,11 @@ img{
 
 .hero-section-h{
     margin: 0 auto;
-    max-width: 496px;
-    max-height: 120px;
+    max-width: 160px;
+    max-height: 160px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
@@ -264,20 +350,14 @@ img{
 .benefits-section-ul {
     margin: 0;
     padding: 0;
-    /* display: flex; */
-
-    /* gap: 72px; */
+    
 
 }
 .benefits-icon-container{
     margin-bottom: 8px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    /* max-width: 264px; */
-    /* height: 112px; */
     background: #f4f4fd;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,6 +365,7 @@ img{
 }
 .benefits-section-strategy-li{
     /* width: calc((100% - 72px) / 4); */
+    margin-bottom: 51px;
 }
 
 .visually-hidden {
@@ -353,7 +434,7 @@ img{
 
     max-width: 264px;
 
-    row-gap: 72px;
+    /* row-gap: 72px; */
 
 
     
@@ -554,7 +635,7 @@ img{
 .footer-section{
     margin: 0 auto;
     background: #2e2f42;
-    max-width: 320px;
+    /* max-width: 320px; */
     padding: 96px 0px;
     text-align: center;
 
@@ -579,13 +660,15 @@ img{
 
 .footer-section-p{
     text-align: left;
+    margin-bottom: 72px;
 }
 
 .footer-social-icons{
     margin: 0 auto;
     text-align: center;
     max-width: 208px;
-    padding: 72px 0px;
+    margin-bottom: 72px;
+    /* padding: 72px 0px; */
 }
 .footer-social-icons-text{
     margin: 0 auto;
@@ -690,7 +773,7 @@ img{
 }
 
 .formlabelinput{
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -700,6 +783,7 @@ img{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    padding: 16px;
 }
 
 .formlabelinput::placeholder{
@@ -707,7 +791,7 @@ img{
 }
 
 .formbutton{
-    max-width: 165px;
+    min-width: 165px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -726,7 +810,7 @@ img{
 
 
 .formbuttonlogo{
-    /* margin-left: 16px; */
+    margin-left: 16px;
 }
 
 
@@ -775,8 +859,8 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    height: 623px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     border-radius: 4px;
@@ -1010,14 +1094,156 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 /* ---------------------------------------------------MEDIA------------------------------------------------------ */
 
+/* ------------------------------------------page-header-------------------------------------------------- */
+/* ------------------------------------------page-header-------------------------------------------------- */
+/* ------------------------------------------page-header-------------------------------------------------- */
+
+@media screen and (min-width:768px){
+    .page-header{
+        max-width:768px;
+        min-height: 72px;
+        margin: 0 auto;
+    }
+
+    .page-header .container{
+        max-width:768px;
+        min-height: 72px;
+    }
+    .menu{
+        display: flex;
+        margin-left: 40px;
+    }
+    .menu-open-button{
+        display: none;
+    }
+
+    .contacts{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .contact-list{
+        gap: 12px;
+        display: flex;
+        flex-direction: column; 
+    }
+    .contact-item-a{
+        font-size: 12px;
+    }    
+}
+
+@media screen and (min-width:1158px){
+    .page-header{
+        max-width:1158px;
+        min-height: 72px;
+        margin: 0 auto;
+    }
+
+    .page-header .container{
+        max-width:1158px;
+        min-height: 72px;
+    }
+
+    .menu{
+        margin-left: 0px;
+    }
+
+
+
+
+
+    .contact-list{
+        gap: 12px;
+        display: flex;
+        flex-direction:row 
+    }
+    .contact-item-a{
+        font-size: 12px;
+    }  
+}
+
+/* ------------------------------------------page-header-------------------------------------------------- */
+/* ------------------------------------------page-header-------------------------------------------------- */
+/* ------------------------------------------page-header-------------------------------------------------- */
+
+
+
+/* --------------------------------------HERO_SECTIONS---------------------------------------- */
+/* --------------------------------------HERO_SECTIONS---------------------------------------- */
+/* --------------------------------------HERO_SECTIONS---------------------------------------- */
+
+@media screen and (min-width:768px){
+    .hero-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-section-tablet.jpg);
+        max-width: 768px;
+        height: 436px;
+        padding-top: 112px;
+    
+    
+    
+        
+    }
+    .hero-section .container{
+        max-width: 768px;
+        gap: 36px;
+    }
+
+
+    
+    .hero-section-h{
+        margin: 0 auto;
+        min-width: 496px;
+        /* min-height: 120px; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+    
+    }
+}
+
+
+@media screen and (min-width:1158px){
+    .hero-section{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-sectin-bg-image.jpg);
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 188px 0;
+        height: 600px;
+    }
+    
+    .hero-section .container {
+        gap: 48px;
+    }
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------HERO_SECTIONS---------------------------------------- */
+/* --------------------------------------HERO_SECTIONS---------------------------------------- */
+/* --------------------------------------HERO_SECTIONS---------------------------------------- */
+
+
+
+
+
+
 
 
 /* -----------------------------------BENEFITS-------------------------------------------- */
 /* -----------------------------------BENEFITS-------------------------------------------- */
 /* -----------------------------------BENEFITS-------------------------------------------- */
-@media (max-width: 1439px) {
+@media (max-width: 1158px) {
     .benefits-icon-container {
-        visibility: hidden;
+        display: none;
     }
 
     @media screen and (min-width:768px){
@@ -1035,8 +1261,26 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
             text-align: left; 
         }
         .benefits-section-strategy-li{
-            flex: calc(50% - 24px);
+            /* flex: calc(50% - 12px); */
+            width: calc((100% - 24px) / 2);
             text-align: left;
+        }
+
+        .benefits-section-strategy-li .benefits-section-h{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11111;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            text-align: left;
+        }
+
+        .benefits-section-p{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
         }
     }
 
@@ -1045,9 +1289,10 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1158px){
     .benefits-section .container{
-        max-width: 1440px;
+        max-width: 1158px;
+        padding:0 15px 0 15px;
     }
 
 
@@ -1059,6 +1304,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
         padding: 0;
         display: flex;
         gap: 24px;
+        text-align: left;
     }
     .benefits-icon-container{
         margin-bottom: 8px;
@@ -1076,6 +1322,20 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     .benefits-section-strategy-li{
         width: calc((100% - 72px) / 4);
     }
+
+    .benefits-section-h h3{
+        text-align:left;
+    }
+
+
+    .benefits-section-strategy-li .benefits-section-h{
+        /* font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        color: #2e2f42; */
+        text-align: left;
+    }
 }
 
 /* -----------------------------------BENEFITS-------------------------------------------- */
@@ -1090,14 +1350,47 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 @media  screen and (min-width:768px){
     .our-team-section .container{
-        max-width: 768px;
+        max-width: 585px;
     }
+
+
+    .our-team-section-list{
+        row-gap: 64px;
+        column-gap: 15px;
+    }
+    .name-position{
+        padding: 32px 0;
+    }
+
+    .benefits-section-h{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+    }
+
+    .our-team-section-p .our-team-section{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #434455;
+    }
+    
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1158px){
     .our-team-section .container{
-        max-width: 1440px;
+        max-width: 1158px;
     }
+    .our-team-section-list{
+        gap:0px
+    }
+
+    
 }
 
 /* ------------------------------------------OUR-TEAM---------------- */
@@ -1117,7 +1410,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     }
 
     .our-portfolio-section-list-item{
-        width: calc((100% - 48px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 
     .our-portfolio-app-img img{
@@ -1126,7 +1419,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
 
     .our-portfolio-section .container{
         max-width: 1128px;
@@ -1184,7 +1477,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
         text-align: left;
     }
     .footer-section .container{
-        max-width: 496px;
+        max-width: 584px;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -1205,8 +1498,9 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     }
     .footer-social-icons p{
         text-align: left;
+        /* margin-bottom: 72px; */
     }
-
+   
 
     .formbutton{
         min-width: 165px;
@@ -1214,7 +1508,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 }
 
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1158px){
 
     .footer-section{
         max-width: 1440px;
@@ -1226,23 +1520,66 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
     .footer-section .container{
         margin: 0 auto;
-        max-width: 1128px;
+        max-width: 1158px;
         padding-top: 0px;
         display: flex;
         align-items: baseline;
     }
     
-    .footer-content{
+    .footer-content .container{
         margin-right: 120px;
+        margin-bottom: 72px;
     }
 
     
     .formcontainer{
         padding: 0px;
+        margin-left: 41px;
+    }
+    .footer-social-icons{
+        margin-left: 120px;
     }
 
+    .footer-section-p{
+        margin: 0;;
+    }
     
 }
+
+
+/* -------------------------------FOOTER--------------------------- */
+/* -------------------------------FOOTER--------------------------- */
+/* -------------------------------FOOTER--------------------------- */
+
+
+
+
+/* -----------------------------------MODAL-WINDOW-----------------------
+-----------------------------------MODAL-WINDOW-----------------------
+-----------------------------------MODAL-WINDOW----------------------- */
+
+@media screen and (min-width:768px){
+    .modalwindow{
+        width: 408px;
+        height: 584px;
+    }
+}
+
+@media screen and (min-width:1158px){
+    .modalwindow{
+        width: 408px;
+        height: 584px;
+    }
+}
+
+
+
+
+
+
+/* -----------------------------------MODAL-WINDOW-----------------------
+-----------------------------------MODAL-WINDOW-----------------------
+-----------------------------------MODAL-WINDOW----------------------- */
 
 
 

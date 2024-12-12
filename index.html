@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Page Header -->
-    <!-- <header class="page-header">
+    <header class="page-header">
       
 
       <div class="container">
@@ -34,9 +34,18 @@
               <a href="" class="menu-item-studio" >Contacts</a>
             </li>
           </ul>
-
+          
         </nav>
-  
+
+        <button type="button" class="menu-open-button">
+          <svg width="24" height="24" class="menu-open-button-logo">
+            <use href="./images/icons.svg#icon-Group"></use>
+          </svg>
+        </button>
+
+
+        
+
         <address class="contacts">
 
           <ul class="contact-list">
@@ -52,15 +61,91 @@
           </ul>
 
         </address>
-          
+
+        
+        
       </div>
-      
-    </header> -->
+
+
+      <div class="mob-menu-div">
+         
+
+        <div>
+
+          <button type="button" class="menu-close-button">X</button>
+
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-item-studio-active">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-item-studio" >Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-item-studio" >Contacts</a>
+            </li>
+          </ul>
+
+        </div>
+        
+
+        
+        
+        <div>
+
+          <ul class="mob-contact-list">
+            <li class="mob-contact-item">
+              <a href="mailto:info@devstudio.com" class="mob-contact-item-a">info@devstudio.com</a>
+            </li>
+            <li class="mob-contact-item">
+              <a href="tel:+110001111111" class="mob-contact-item-a">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+  
+  
+          <ul class="our-team-social-icon-list">
+            <li class="our-team-social-list-item">
+              <a href="#" class="our-team-social-link">
+                <svg width="16" height="16" class="our-team-social-icon">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-social-list-item">
+              <a href="#" class="our-team-social-link">
+                <svg width="16" height="16" class="our-team-social-icon">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-social-list-item">
+              <a href="#" class="our-team-social-link">
+                <svg width="16" height="16" class="our-team-social-icon">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="our-team-social-list-item">
+              <a href="#" class="our-team-social-link">
+                <svg width="16" height="16" class="our-team-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </header>
+
 
     <main class="main">
       <!-- Hero Section -->
 
-      <!-- <section class="hero-section">
+      <section class="hero-section">
 
         <div class="container">
           <h1 class="hero-section-h">Effective Solutions for Your Business</h1>
@@ -70,7 +155,7 @@
           </button>
         </div>
         
-      </section> -->
+      </section>
 
       <!-- Our Advantages -->
       <section class="benefits-section">
@@ -158,7 +243,7 @@
           <ul class="our-team-section-list">
             <li class="our-team-section-item">
               <img
-                src="./images/product-designer.jpg"
+                src="./images/PD-2x.jpg"
                 alt="Mark Guerrero avatar"
                 width="264"
               />
@@ -208,7 +293,7 @@
   
             <li class="our-team-section-item">
               <img
-                src="./images/frontent-dev.jpg"
+                src="./images/FD-2x.jpg"
                 alt="frontend-dev"
                 width="264"
               />
@@ -254,7 +339,7 @@
             </li>
   
             <li class="our-team-section-item">
-              <img src="./images/marketing.jpg" alt="marketing" width="264" />
+              <img src="./images/M-2x.jpg" alt="marketing" width="264" />
 
               <div class="name-position">
                 <h3 class="benefits-section-h">Camila Garcia</h3>
@@ -298,7 +383,7 @@
             </li>
   
             <li class="our-team-section-item">
-              <img src="./images/ui-designer.jpg" alt="ui-des" width="264" />
+              <img src="./images/UID-2x.jpg" alt="ui-des" width="264" />
               
               <div class="name-position">
                 <h3 class="benefits-section-h">Daniel Wilson</h3>
@@ -354,7 +439,7 @@
           <ul class="our-portfolio-section-list">
             <li class="our-portfolio-section-list-item">
               <div class="our-portfolio-app-img">
-                <img src="./images/banking-app.jpg" alt="banking-app" width="288" />
+                <img src="./images/BA-2x.jpg" alt="banking-app" width="288" />
                 <p class="our-portfolio-app-img-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · Calorie Tracker App · 
@@ -374,7 +459,7 @@
   
             <li class="our-portfolio-section-list-item">
               <div class="our-portfolio-app-img">
-                <img src="./images/cashless-payment.jpg" alt="cashless-payment" width="288"/>
+                <img src="./images/CP-2x.jpg" alt="cashless-payment" width="288"/>
                 <p class="our-portfolio-app-img-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · Calorie Tracker App · 
@@ -395,7 +480,7 @@
             <li class="our-portfolio-section-list-item">
 
               <div class="our-portfolio-app-img">
-                <img src="./images/meditation-app.jpg" alt="meditation-app" width="288" />
+                <img src="./images/MA-2x.jpg" alt="meditation-app" width="288" />
                 <p class="our-portfolio-app-img-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · Calorie Tracker App · 
@@ -413,7 +498,7 @@
             <li class="our-portfolio-section-list-item">
 
               <div class="our-portfolio-app-img">
-                <img src="./images/taxi-service.jpg" alt="taxi-service" width="288" />
+                <img src="./images/TS-2x.jpg" alt="taxi-service" width="288" />
                 <p class="our-portfolio-app-img-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · Calorie Tracker App · 
@@ -433,7 +518,7 @@
             <li class="our-portfolio-section-list-item">
 
               <div class="our-portfolio-app-img">
-                <img src="./images/screen-illustrations.jpg" alt="screen-illustrations" width="288" />
+                <img src="./images/SI-2x.jpg" alt="screen-illustrations" width="288" />
                 <p class="our-portfolio-app-img-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · Calorie Tracker App · 
@@ -453,7 +538,7 @@
             <li class="our-portfolio-section-list-item">
 
               <div class="our-portfolio-app-img">
-                <img src="./images/online-courses.jpg" alt="online-courses" width="288" />
+                <img src="./images/OC-2x.jpg" alt="online-courses" width="288" />
                 <p class="our-portfolio-app-img-text">
                   14 Stylish and User-Friendly App Design Concepts · 
                   Task Manager App · Calorie Tracker App · 
@@ -545,6 +630,8 @@
                   <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
+
+
           </form>
   
         </div>
@@ -565,7 +652,7 @@
     <!-- ##############################MODAL-CONTAINER############################# -->
     <!-- ##############################MODAL-CONTAINER############################# -->
 
-    <!-- <div class="modalcontainer" id="modalcontainera">
+    <div class="modalcontainer" id="modalcontainera">
 
       <div class="modalwindow">
 
@@ -648,6 +735,6 @@
       </div>
     </div>
 
-    <script src="./scripts.js"></script> -->
+    <script src="./scripts.js"></script>
   </body>
 </html>
