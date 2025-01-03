@@ -1174,7 +1174,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 @media screen and (min-width:768px){
     .hero-section{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-section-tablet.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-section-tablet.jpg);
         max-width: 768px;
         height: 436px;
         padding-top: 112px;
@@ -1208,7 +1208,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 @media screen and (min-width:1158px){
     .hero-section{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-sectin-bg-image.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-sectin-bg-image.jpg);
         margin: 0 auto;
         max-width: 1440px;
         padding: 188px 0;
