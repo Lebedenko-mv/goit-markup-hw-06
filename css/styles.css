@@ -206,28 +206,72 @@ img{
     visibility: hidden;
 }
 
+/* .mob-menu-contacts{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--iris);
+} */
+
+.mob-contact-item-a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--iris);
+}
+
+
+.mob-contact-item-a:hover{
+    color: #4D5AE5;
+}
+
+
+.mob-menu-div .mob-contact-list{
+    padding-left: 16px;
+    margin-bottom: 42px;
+}
+
+.mob-contact-item{
+    gap: 24px;
+    margin-bottom: 24px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--iris);
+}
 .menu-close-button{
     display: block;
     margin-left: auto;
     margin-bottom: 24px;
+
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-/* .mob-menu-ul-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-.mob-menu-list a{
-    /* margin-top: 40px; */
-
-}
-
 .mob-menu-item{
     margin-left: 16px;
     margin-bottom: 40px;
 }
-
-
 .mob-menu-item-studio-active{
     font-weight: 700;
     font-size: 36px;
@@ -350,6 +394,9 @@ img{
 .benefits-section-ul {
     margin: 0;
     padding: 0;
+    /* gap: 72px; */
+    display:grid;
+    gap:72px;
     
 
 }
@@ -365,7 +412,8 @@ img{
 }
 .benefits-section-strategy-li{
     /* width: calc((100% - 72px) / 4); */
-    margin-bottom: 51px;
+    /* margin-bottom: 51px; */
+    
 }
 
 .visually-hidden {
@@ -415,7 +463,7 @@ img{
     flex-wrap: wrap;
 }
 .our-team-section{
-    padding: 120px 0;
+    padding: 96px 0;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -428,21 +476,12 @@ img{
     /* width: calc((100% - 72px) / 4); */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
-
     margin: 0 auto;
-
     max-width: 264px;
-
-    /* row-gap: 72px; */
-
-
-    
 }
 
 .our-team-section-p{
     text-align: center;
-
     font-size: 16px;
     line-height: 1.5;
     color:#434455;
@@ -472,6 +511,10 @@ img{
 
 .name-position{
     padding: 32px 0;
+    /* background-color: red; */
+}
+
+.name-position h3{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -479,6 +522,8 @@ img{
     text-align: center;
     color: #2e2f42;
 }
+
+
 
 .our-team-social-icon-list{
     margin-top: 8px;
@@ -541,7 +586,7 @@ img{
     flex-direction: column;
 }
 .our-portfolio-section{
-    padding: 120px 0 120px 0;
+    padding: 96px 0 120px 0;
 }
 .our-portfolio-section-list {
     margin: 0;
@@ -660,7 +705,7 @@ img{
 
 .footer-section-p{
     text-align: left;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 .footer-social-icons{
@@ -1158,7 +1203,14 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
         flex-direction:row 
     }
     .contact-item-a{
-        font-size: 12px;
+        /* font-size: 12px; */
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: var(--slate);
     }  
 }
 
@@ -1259,12 +1311,12 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
         .benefits-section-ul{
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 72px;
             text-align: left; 
         }
         .benefits-section-strategy-li{
             /* flex: calc(50% - 12px); */
-            width: calc((100% - 24px) / 2);
+            width: calc((100% - 72px) / 2);
             text-align: left;
         }
 
@@ -1528,9 +1580,12 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
         align-items: baseline;
     }
     
-    .footer-content .container{
+    .footer-section  .footer-content{
         margin-right: 120px;
         margin-bottom: 72px;
+        background-color: red;
+        color: #000 !important;
+
     }
 
     
