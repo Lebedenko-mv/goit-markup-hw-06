@@ -260,13 +260,13 @@ img{
 /* main */
 
 .hero-section{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-section-mobile-2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-section-mobile-2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
     max-width: 320px;
-    height: 432px;
+    /* height: 432px; */
     text-align: center;
     padding: 72px 0;
 
