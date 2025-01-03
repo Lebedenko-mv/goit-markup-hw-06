@@ -1559,6 +1559,12 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     .formbutton{
         min-width: 165px;
     }
+
+    .footer-content{
+        /* margin-right: 120px; */
+        margin-bottom: 72px;
+    }
+    
 }
 
 
@@ -1566,7 +1572,6 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
     .footer-section{
         max-width: 1440px;
-
         margin: 0 auto;
         padding: 100px 0;
         background: #2e2f42;
@@ -1580,12 +1585,9 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
         align-items: baseline;
     }
     
-    .footer-section  .footer-content{
-        margin-right: 120px;
+.footer-content{
+        /* margin-right: 120px; */
         margin-bottom: 72px;
-        background-color: red;
-        color: #000 !important;
-
     }
 
     
