@@ -687,7 +687,9 @@ img{
 
 }
 
-
+.footer-content{
+    margin-bottom: 72px;
+}
 .footer-section .container .main-logo-footer{  
     display: inline-block;
     margin-bottom: 16px;
@@ -1228,15 +1230,15 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     .hero-section{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
         url(../images/hero-section-tablet.jpg);
-        /* url(../images/hero-sectin-bg-image.jpg); */
         max-width: 768px;
         height: 436px;
         padding-top: 112px;
     
     
     
-        
-    }
+            
+    }  
+
     .hero-section .container{
         max-width: 768px;
         gap: 36px;
@@ -1262,12 +1264,25 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
 
 @media screen and (min-width:1158px){
     .hero-section{
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-sectin-bg-image.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(..//images/hero-sectin-bg-image-1x.jpg);
         margin: 0 auto;
         max-width: 1440px;
         padding: 188px 0;
         height: 600px;
     }
+
+    @media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+	.hero-wrap {
+	background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+   ), url(..//images/hero-sectin-bg-image-2x.jpg);
+	}
+	}
+
     
     .hero-section .container {
         gap: 48px;
@@ -1573,7 +1588,7 @@ input[type="checkbox"]:checked + label .checkboxlabelspan {
     .footer-section{
         max-width: 1440px;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 65px 0;
         background: #2e2f42;
     }
 
